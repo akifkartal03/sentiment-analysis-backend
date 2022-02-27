@@ -2,7 +2,7 @@
 
 ### Brief Description
 
-- This API lets you to use trained sentiment analysis model by using api routes. It accepts simple json string and retunrs result in json format.
+- This API lets you to use trained sentiment analysis model by using api routes. It accepts simple json string and returns result in json format.
 
 ### Usage Area
 
