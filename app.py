@@ -15,18 +15,15 @@ def index():
 
 @app.route("/api/v1/getResult", methods=['POST'])
 def getresult():
-    # print("heree")
+    
     request_data = request.get_json()
-    # print(request_data)
+    
     comment = request_data['comment']
-    # print(comment)
+   
     com_en = translator.translate(comment, dest="en").text
     com_en = com_en.replace("country", "dormitory")
     com_en = [com_en]
     result = model.predict(com_en)
-
-    # print(result)
-    # print(com_en)
 
     return jsonify({'result': result[0]})
 
